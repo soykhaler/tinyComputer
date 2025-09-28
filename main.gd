@@ -11,7 +11,7 @@ func HideMenu():
 func _on_Settings_pressed():
 	HideMenu()
 	core.displayAlert("Setting Tab\n Available very soon")
-	core.soundBeep(0.2)
+	core.errorSound()
 func _on_Folders_pressed():
 	HideMenu()
 	core.displayAlert("Folder Tab \n Available very Soon")

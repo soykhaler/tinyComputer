@@ -16,3 +16,10 @@ func displayAlert(message: String) -> void:
 func soundBeep(pitch: float) -> void:
 	beeper.pitch_scale=pitch
 	beeper.play()
+func errorSound():
+	soundBeep(0.4)
+	yield(get_tree().create_timer(0.1),"timeout")
+	soundBeep(0.2)
+	soundBeep(0.4)
+	yield(get_tree().create_timer(0.1),"timeout")
+	soundBeep(0.2)
