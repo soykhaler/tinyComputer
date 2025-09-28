@@ -47,6 +47,10 @@ func _process_command(command: String) -> void:
 		"exit":
 			output_text.text += "Exiting...\n"
 			queue_free()
+		"boot":
+			core.bootSound()
+		"error":
+			core.errorSound()
 		_:
 			if lower_cmd.begins_with("echo "):
 				var text_to_echo = command.substr(5, command.length() - 5)

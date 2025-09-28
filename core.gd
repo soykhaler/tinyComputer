@@ -13,13 +13,23 @@ func displayAlert(message: String) -> void:
 	get_tree().get_root().add_child(window)
 	window.popup_centered()
 	window.dialog_text = message
+func wait(time: float) -> void:
+	yield(get_tree().create_timer(time), "timeout")
 func soundBeep(pitch: float) -> void:
 	beeper.pitch_scale=pitch
 	beeper.play()
 func errorSound():
 	soundBeep(0.4)
-	yield(get_tree().create_timer(0.1),"timeout")
+	yield(wait(0.1), "completed")
 	soundBeep(0.2)
 	soundBeep(0.4)
-	yield(get_tree().create_timer(0.1),"timeout")
+	yield(wait(0.1), "completed")
 	soundBeep(0.2)
+func bootSound():
+	soundBeep(0.4)
+	yield(wait(0.1), "completed")
+	soundBeep(0.2)
+	yield(wait(0.1), "completed")
+	soundBeep(0.4)
+	yield(wait(0.1), "completed")
+	soundBeep(0.6)
