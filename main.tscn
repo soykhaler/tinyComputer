@@ -49,17 +49,6 @@ margin_right = 63.0
 margin_bottom = 508.0
 text = "Start"
 
-[node name="AcceptDialog" type="AcceptDialog" parent="."]
-visible = true
-margin_left = 164.0
-margin_top = 196.0
-margin_right = 354.0
-margin_bottom = 308.0
-window_title = "LOAD"
-resizable = true
-dialog_text = "El sistema ha sido 
-cargado correctamente"
-
 [node name="StartMenu" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
@@ -98,6 +87,14 @@ text = "Settings"
 stream = ExtResource( 3 )
 volume_db = -5.243
 pitch_scale = 0.93
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+margin_left = 164.0
+margin_top = 196.0
+margin_right = 354.0
+margin_bottom = 308.0
+window_title = "LOAD"
+resizable = true
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="StartMenu/Browser" to="." method="_on_Browser_pressed"]

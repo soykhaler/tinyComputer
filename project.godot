@@ -14,6 +14,10 @@ config/name="tinyComputer"
 run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+core="*res://core.gd"
+
 [display]
 
 window/size/width=512

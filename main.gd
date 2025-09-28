@@ -1,4 +1,7 @@
 extends Control
+func showMessage(message: String) -> void:
+	$AcceptDialog.dialog_text = message
+	$AcceptDialog.popup()
 func _ready():
 	showMessage("System Loaded Successful")
 	HideStartMenu()
@@ -29,8 +32,5 @@ func _on_Browser_pressed():
 	$AcceptDialog.popup()
 	showMessage("Available very soon")
 	$beep.play()
-func showMessage(message: String) -> void:
-	$AcceptDialog.dialog_text = message
-	$AcceptDialog.popup()
 func HideStartMenu():
 	$StartMenu.visible = false;
