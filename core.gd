@@ -1,12 +1,17 @@
 extends Node
 var window = AcceptDialog.new()
 var beeper = AudioStreamPlayer.new()
+var explorer = FileDialog.new()
 func _ready():
 	add_child(beeper)
 	beeper.stream= preload("res://blipSelect.wav")
 func CreateWindow():
 	get_tree().get_root().add_child(window)
 	window.popup_centered()
+func openFileDialog():
+	get_tree().get_root().add_child(explorer)
+	explorer.set_size(Vector2(300, 300))
+	explorer.popup_centered()
 func showMessage(message: String) -> void:
 	window.dialog_text = message
 func displayAlert(message: String) -> void:
@@ -33,3 +38,4 @@ func bootSound():
 	soundBeep(0.4)
 	yield(wait(0.1), "completed")
 	soundBeep(0.6)
+

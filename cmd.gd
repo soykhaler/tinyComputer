@@ -50,6 +50,7 @@ func _process_command(command: String) -> void:
 			output_text.text = ""
 		"exit":
 			output_text.text += "Exiting...\n"
+			yield (core.wait(0.6), "completed")
 			queue_free()
 		"boot":
 			core.bootSound()

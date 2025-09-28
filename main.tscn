@@ -88,14 +88,6 @@ stream = ExtResource( 3 )
 volume_db = -5.243
 pitch_scale = 0.93
 
-[node name="AcceptDialog" type="AcceptDialog" parent="."]
-margin_left = 164.0
-margin_top = 196.0
-margin_right = 354.0
-margin_bottom = 308.0
-window_title = "LOAD"
-resizable = true
-
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="StartMenu/Browser" to="." method="_on_Browser_pressed"]
 [connection signal="pressed" from="StartMenu/Command" to="." method="_on_Command_pressed"]
