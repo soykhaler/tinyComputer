@@ -11,20 +11,20 @@ func HideMenu():
 func _on_Settings_pressed():
 	HideMenu()
 	core.displayAlert("Available very soon")
-	$beep.play()
+	core.soundBeep(0.2)
 func _on_Folders_pressed():
 	HideMenu()
 	core.displayAlert("Available very soon")
-	$beep.play()
+	core.soundBeep(1)
 func _on_Command_pressed():
 	HideMenu()
 	var command_window = preload("res://cmd.tscn")
 	var cmd = command_window.instance()
 	add_child(cmd)
-	$beep.play()
+	core.soundBeep(1)
 func _on_Browser_pressed():
 	HideMenu()
 	core.displayAlert("Available very soon")
-	$beep.play()
+	core.soundBeep(1)
 func HideStartMenu():
 	$StartMenu.visible = false;
