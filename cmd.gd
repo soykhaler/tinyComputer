@@ -42,6 +42,10 @@ func _process_command(command: String) -> void:
 			output_text.text += "  exit       - Close this window\n"
 			output_text.text += "  window [value] - show a simple alert window\n"
 			output_text.text += "  beep [value]  - sounds a beeper\n"
+			output_text.text += "  ------ PRESETS ------\n"
+			output_text.text += "  error - sound a error sound made with beeper\n"
+			output_text.text += "  boot - play the boot sound at startup\n"
+			
 		"clear":
 			output_text.text = ""
 		"exit":
