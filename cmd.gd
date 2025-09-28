@@ -41,6 +41,7 @@ func _process_command(command: String) -> void:
 			output_text.text += "  echo       - Print text on terminal\n"
 			output_text.text += "  exit       - Close this window\n"
 			output_text.text += "  window     - show a simple alert window\n"
+			output_text.text += "  beep [value]  - sounds a beeper\n"
 		"clear":
 			output_text.text = ""
 		"exit":
@@ -54,6 +55,9 @@ func _process_command(command: String) -> void:
 				var text_to_echo = command.substr(6, command.length() - 6)
 				core.showMessage(text_to_echo)
 				core.CreateWindow()
+			elif lower_cmd.begins_with("beep "):
+				var text_to_echo = command.substr(4, command.length() - 4)
+				core.soundBeep(float(text_to_echo))
 			else:
 				output_text.text += "Unknown Command: " + command + "\n"
 func Close():
