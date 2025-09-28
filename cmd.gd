@@ -40,7 +40,7 @@ func _process_command(command: String) -> void:
 			output_text.text += "  clear      - Clear terminal\n"
 			output_text.text += "  echo       - Print text on terminal\n"
 			output_text.text += "  exit       - Close this window\n"
-			output_text.text += "  window     - show a simple alert window\n"
+			output_text.text += "  window [value] - show a simple alert window\n"
 			output_text.text += "  beep [value]  - sounds a beeper\n"
 		"clear":
 			output_text.text = ""
