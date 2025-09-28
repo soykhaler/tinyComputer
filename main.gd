@@ -1,7 +1,7 @@
 extends Control
 func _ready():
-	$AcceptDialog.popup()
-	$StartMenu.visible = false;
+	showMessage("System Loaded Successful")
+	HideStartMenu()
 func _on_Button_pressed():
 	StartMenu()
 func StartMenu():
@@ -11,12 +11,12 @@ func HideMenu():
 func _on_Settings_pressed():
 	HideMenu()
 	$AcceptDialog.popup()
-	$AcceptDialog.dialog_text ="Settings Window"
+	showMessage("Available very soon")
 	$beep.play()
 func _on_Folders_pressed():
 	HideMenu()
 	$AcceptDialog.popup()
-	$AcceptDialog.dialog_text ="Folder Window"
+	showMessage("Available very soon")
 	$beep.play()
 func _on_Command_pressed():
 	HideMenu()
@@ -27,5 +27,10 @@ func _on_Command_pressed():
 func _on_Browser_pressed():
 	HideMenu()
 	$AcceptDialog.popup()
-	$AcceptDialog.dialog_text ="Browser Window"
+	showMessage("Available very soon")
 	$beep.play()
+func showMessage(message: String) -> void:
+	$AcceptDialog.dialog_text = message
+	$AcceptDialog.popup()
+func HideStartMenu():
+	$StartMenu.visible = false;

@@ -96,6 +96,8 @@ text = "Settings"
 
 [node name="beep" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+volume_db = -5.243
+pitch_scale = 0.93
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="StartMenu/Browser" to="." method="_on_Browser_pressed"]
