@@ -1,6 +1,5 @@
 extends Control
 func _ready():
-	core.showMessage("System Loaded Successful")
 	HideStartMenu()
 func _on_Button_pressed():
 	StartMenu()
@@ -26,5 +25,11 @@ func _on_Browser_pressed():
 	HideMenu()
 	core.displayAlert("Browser Tab \nAvailable very soon")
 	core.soundBeep(0.6)
+func _on_paint_pressed():
+	HideMenu()
+	var pixel_editor = preload("res://TinyPixelArt.tscn")
+	var editor = pixel_editor.instance()
+	add_child(editor)
+	core.soundBeep(0.4)
 func HideStartMenu():
 	$StartMenu.visible = false;
