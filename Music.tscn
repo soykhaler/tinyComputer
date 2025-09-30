@@ -67,16 +67,16 @@ margin_right = 423.0
 margin_bottom = 329.0
 text = "B"
 
-[node name="sound" type="AudioStreamPlayer" parent="."]
-unique_name_in_owner = true
-
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="Control"]
 margin_left = 31.0
-margin_top = 69.0
+margin_top = 46.0
 margin_right = 105.0
-margin_bottom = 83.0
+margin_bottom = 60.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "PIANO_APP"
+
+[node name="sound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
 
 [connection signal="pressed" from="Control/do" to="." method="do"]
 [connection signal="pressed" from="Control/re" to="." method="re"]
