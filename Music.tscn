@@ -17,49 +17,49 @@ margin_left = 28.0
 margin_top = 191.0
 margin_right = 91.0
 margin_bottom = 232.0
-text = "do"
+text = "C"
 
 [node name="re" type="Button" parent="Control"]
 margin_left = 92.0
 margin_top = 191.0
 margin_right = 155.0
 margin_bottom = 232.0
-text = "re"
+text = "D"
 
 [node name="mi" type="Button" parent="Control"]
 margin_left = 156.0
 margin_top = 191.0
 margin_right = 219.0
 margin_bottom = 232.0
-text = "mi"
+text = "E"
 
 [node name="fa" type="Button" parent="Control"]
 margin_left = 220.0
 margin_top = 191.0
 margin_right = 283.0
 margin_bottom = 232.0
-text = "fa"
+text = "F"
 
 [node name="sol" type="Button" parent="Control"]
 margin_left = 284.0
 margin_top = 191.0
 margin_right = 347.0
 margin_bottom = 232.0
-text = "sol"
+text = "G"
 
 [node name="la" type="Button" parent="Control"]
 margin_left = 348.0
 margin_top = 191.0
 margin_right = 411.0
 margin_bottom = 232.0
-text = "la"
+text = "A"
 
 [node name="si" type="Button" parent="Control"]
 margin_left = 412.0
 margin_top = 191.0
 margin_right = 475.0
 margin_bottom = 232.0
-text = "si"
+text = "B"
 
 [node name="sound" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
