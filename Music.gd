@@ -17,3 +17,7 @@ func sol():
 func la():
 	$"%sound".stream = preload("res://sounds/la.ogg")
 	$"%sound".play()
+func si():
+	$"%sound".stream = preload("res://sounds/si.ogg")
+	$"%sound".play()
+

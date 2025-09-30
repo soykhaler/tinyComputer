@@ -13,46 +13,53 @@ margin_top = 23.0
 margin_bottom = 23.0
 
 [node name="do" type="Button" parent="Control"]
-margin_left = 36.0
+margin_left = 28.0
 margin_top = 191.0
-margin_right = 99.0
+margin_right = 91.0
 margin_bottom = 232.0
 text = "do"
 
 [node name="re" type="Button" parent="Control"]
-margin_left = 100.0
+margin_left = 92.0
 margin_top = 191.0
-margin_right = 163.0
+margin_right = 155.0
 margin_bottom = 232.0
 text = "re"
 
 [node name="mi" type="Button" parent="Control"]
-margin_left = 164.0
+margin_left = 156.0
 margin_top = 191.0
-margin_right = 227.0
+margin_right = 219.0
 margin_bottom = 232.0
 text = "mi"
 
 [node name="fa" type="Button" parent="Control"]
-margin_left = 228.0
+margin_left = 220.0
 margin_top = 191.0
-margin_right = 291.0
+margin_right = 283.0
 margin_bottom = 232.0
 text = "fa"
 
 [node name="sol" type="Button" parent="Control"]
-margin_left = 292.0
+margin_left = 284.0
 margin_top = 191.0
-margin_right = 355.0
+margin_right = 347.0
 margin_bottom = 232.0
 text = "sol"
 
 [node name="la" type="Button" parent="Control"]
-margin_left = 356.0
+margin_left = 348.0
 margin_top = 191.0
-margin_right = 419.0
+margin_right = 411.0
 margin_bottom = 232.0
 text = "la"
+
+[node name="si" type="Button" parent="Control"]
+margin_left = 412.0
+margin_top = 191.0
+margin_right = 475.0
+margin_bottom = 232.0
+text = "si"
 
 [node name="sound" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
@@ -63,3 +70,4 @@ unique_name_in_owner = true
 [connection signal="pressed" from="Control/fa" to="." method="fa"]
 [connection signal="pressed" from="Control/sol" to="." method="sol"]
 [connection signal="pressed" from="Control/la" to="." method="la"]
+[connection signal="pressed" from="Control/si" to="." method="si"]
