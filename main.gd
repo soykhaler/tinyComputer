@@ -33,3 +33,9 @@ func _on_paint_pressed():
 	core.soundBeep(0.4)
 func HideStartMenu():
 	$StartMenu.visible = false;
+func Music():
+	HideMenu()
+	var music = preload("res://Music.tscn")
+	var m_window = music.instance()
+	add_child(m_window)
+	core.soundBeep(0.2)

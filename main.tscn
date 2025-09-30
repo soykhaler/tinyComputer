@@ -89,7 +89,7 @@ margin_right = 80.0
 margin_bottom = 389.0
 text = "Paint"
 
-[node name="Piano" type="Button" parent="StartMenu"]
+[node name="Music" type="Button" parent="StartMenu"]
 margin_top = 346.0
 margin_right = 80.0
 margin_bottom = 366.0
@@ -106,3 +106,4 @@ pitch_scale = 0.93
 [connection signal="pressed" from="StartMenu/Folders" to="." method="_on_Folders_pressed"]
 [connection signal="pressed" from="StartMenu/Settings" to="." method="_on_Settings_pressed"]
 [connection signal="pressed" from="StartMenu/Paint" to="." method="_on_paint_pressed"]
+[connection signal="pressed" from="StartMenu/Music" to="." method="Music"]
