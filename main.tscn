@@ -54,7 +54,7 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="ColorRect3" type="ColorRect" parent="StartMenu"]
-margin_top = 367.0
+margin_top = 342.0
 margin_right = 83.0
 margin_bottom = 485.0
 color = Color( 0.239216, 0.239216, 0.239216, 1 )
@@ -84,10 +84,16 @@ margin_bottom = 412.0
 text = "Settings"
 
 [node name="Paint" type="Button" parent="StartMenu"]
-margin_top = 370.0
+margin_top = 369.0
 margin_right = 80.0
-margin_bottom = 390.0
+margin_bottom = 389.0
 text = "Paint"
+
+[node name="Piano" type="Button" parent="StartMenu"]
+margin_top = 346.0
+margin_right = 80.0
+margin_bottom = 366.0
+text = "Music"
 
 [node name="beep" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
