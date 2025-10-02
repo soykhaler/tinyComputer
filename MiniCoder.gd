@@ -10,6 +10,8 @@ func Execute():
 		var command = line.strip_edges()
 		if command == "":
 			continue
+		if command == "//":
+			continue
 		if command.begins_with("beep "):
 			var parts = command.split(" ")
 			if parts.size() > 1:
@@ -30,6 +32,11 @@ func Execute():
 				core.printer()
 				print("comando")
 				yield (core.wait(1), "completed") 
+		if command.begins_with("wait "):
+			var parts = command.split (" ")
+			if parts.size() >1:
+				value = float(parts[1])
+				yield (core.wait(value), "completed")
 		if command == "boot":
 			core.bootSound()
 			yield (core.wait(0.2), "completed") 
