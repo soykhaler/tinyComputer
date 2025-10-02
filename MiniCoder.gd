@@ -30,7 +30,6 @@ func Execute():
 				valueWord = str(parts[1])
 				core.printerText = valueWord
 				core.printer()
-				print("comando")
 				yield (core.wait(1), "completed") 
 		if command.begins_with("wait "):
 			var parts = command.split (" ")
