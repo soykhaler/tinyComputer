@@ -45,8 +45,6 @@ func Notepad():
 	var w_notepad = notepad.instance()
 	add_child(w_notepad)
 	core.soundBeep(0.2)
-
-
 func MiniCoder():
 	HideMenu()
 	var minicoder = preload("res://MiniCoder.tscn")

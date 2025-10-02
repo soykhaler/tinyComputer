@@ -4,7 +4,7 @@ var valueWord = ""
 func Close():
 	queue_free()
 func Execute():
-	var code = $TextEdit.text           
+	var code = $TextEdit.text
 	var lines = code.split("\n")
 	for line in lines:
 		var command = line.strip_edges()
@@ -28,6 +28,7 @@ func Execute():
 				valueWord = str(parts[1])
 				core.printerText = valueWord
 				core.printer()
+				print("comando")
 				yield (core.wait(1), "completed") 
 		if command == "boot":
 			core.bootSound()
@@ -35,4 +36,3 @@ func Execute():
 		if command == "error":
 			core.errorSound()
 			yield(core.wait(0.2), "completed")
-				
