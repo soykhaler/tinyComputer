@@ -21,13 +21,13 @@ func Execute():
 		if command.begins_with("window "):
 			var parts = command.split (" ")
 			if parts.size() > 1:
-				valueWord = str(parts[1])
+				valueWord = command.substr(6, command.length()) 
 				core.displayAlert(valueWord)
 				yield (core.wait(0.1), "completed") 
 		if command.begins_with("echo "):
 			var parts = command.split (" ")
 			if parts.size() >1:
-				valueWord = str(parts[1])
+				valueWord = command.substr(4, command.length()) 
 				core.printerText = valueWord
 				core.printer()
 				yield (core.wait(1), "completed") 
