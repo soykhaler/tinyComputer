@@ -54,7 +54,7 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="ColorRect3" type="ColorRect" parent="StartMenu"]
-margin_top = 342.0
+margin_top = 322.0
 margin_right = 83.0
 margin_bottom = 485.0
 color = Color( 0.239216, 0.239216, 0.239216, 1 )
@@ -95,6 +95,12 @@ margin_right = 80.0
 margin_bottom = 366.0
 text = "Music"
 
+[node name="Notepad" type="Button" parent="StartMenu"]
+margin_top = 324.0
+margin_right = 80.0
+margin_bottom = 344.0
+text = "Notepad"
+
 [node name="beep" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 volume_db = -5.243
@@ -107,3 +113,4 @@ pitch_scale = 0.93
 [connection signal="pressed" from="StartMenu/Settings" to="." method="_on_Settings_pressed"]
 [connection signal="pressed" from="StartMenu/Paint" to="." method="_on_paint_pressed"]
 [connection signal="pressed" from="StartMenu/Music" to="." method="Music"]
+[connection signal="pressed" from="StartMenu/Notepad" to="." method="Notepad"]

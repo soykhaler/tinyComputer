@@ -39,3 +39,10 @@ func Music():
 	var m_window = music.instance()
 	add_child(m_window)
 	core.soundBeep(0.2)
+func Notepad():
+	HideMenu()
+	var notepad = preload("res://Notepad.tscn")
+	var w_notepad = notepad.instance()
+	add_child(w_notepad)
+	core.soundBeep(0.2)
+	pass # Replace with function body.
