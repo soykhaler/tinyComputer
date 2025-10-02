@@ -45,4 +45,12 @@ func Notepad():
 	var w_notepad = notepad.instance()
 	add_child(w_notepad)
 	core.soundBeep(0.2)
-	pass # Replace with function body.
+
+
+func MiniCoder():
+	HideMenu()
+	var minicoder = preload("res://MiniCoder.tscn")
+	var w_minicoder = minicoder.instance()
+	add_child(w_minicoder)
+	core.soundBeep(0.2)
+

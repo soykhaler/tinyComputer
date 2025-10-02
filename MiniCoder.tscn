@@ -1,11 +1,10 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Empty_window.gd" type="Script" id=1]
+[ext_resource path="res://MiniCoder.gd" type="Script" id=1]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-rect_pivot_offset = Vector2( -109, -329 )
 
 [node name="Control" type="Control" parent="."]
 anchor_right = 1.0
@@ -41,10 +40,11 @@ text = "X"
 
 [node name="TextEdit" type="TextEdit" parent="Control"]
 margin_left = 16.0
-margin_top = 71.0
+margin_top = 100.0
 margin_right = 495.0
 margin_bottom = 413.0
 rect_pivot_offset = Vector2( 1, 4 )
+show_line_numbers = true
 
 [node name="Label" type="Label" parent="Control"]
 margin_left = 31.0
@@ -52,6 +52,14 @@ margin_top = 46.0
 margin_right = 105.0
 margin_bottom = 60.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Notepad"
+text = "MiniCoder"
+
+[node name="Execute" type="Button" parent="Control"]
+margin_left = 227.0
+margin_top = 75.0
+margin_right = 289.0
+margin_bottom = 95.0
+text = "Execute"
 
 [connection signal="pressed" from="Control/Button" to="Control" method="Close"]
+[connection signal="pressed" from="Control/Execute" to="Control" method="Execute"]

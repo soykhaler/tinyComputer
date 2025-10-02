@@ -2,9 +2,14 @@ extends Node
 var window = AcceptDialog.new()
 var beeper = AudioStreamPlayer.new()
 var explorer = FileDialog.new()
+var printerText = ""
 func _ready():
 	add_child(beeper)
 	beeper.stream= preload("res://blipSelect.wav")
+func printer():
+	var printerScene = preload("res://Printer.tscn")
+	var printerWindow = printerScene.instance()
+	get_tree().get_root().get_child(get_tree().get_root().get_child_count() - 1).add_child(printerWindow)
 func CreateWindow():
 	get_tree().get_root().add_child(window)
 	window.popup_centered()

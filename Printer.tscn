@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://printer.gd" type="Script" id=1]
+
+[node name="Printer" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( -248, 152 )
+script = ExtResource( 1 )
+
+[node name="printColor" type="ColorRect" parent="."]
+margin_left = 17.0
+margin_top = 424.0
+margin_right = 488.0
+margin_bottom = 464.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="printText" type="Label" parent="."]
+margin_left = 17.0
+margin_top = 430.0
+margin_right = 487.0
+margin_bottom = 463.0
+text = "Hola Mundo"
+align = 1
+valign = 1
