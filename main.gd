@@ -51,4 +51,3 @@ func MiniCoder():
 	var w_minicoder = minicoder.instance()
 	add_child(w_minicoder)
 	core.soundBeep(0.2)
-

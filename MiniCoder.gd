@@ -42,3 +42,12 @@ func Execute():
 		if command == "error":
 			core.errorSound()
 			yield(core.wait(0.2), "completed")
+		if command == "help":
+			core.displayAlert("""
+			echo -> show a message (formerly print)
+			beep -> uses beeper
+			wait -> wait any time
+			boot -> play boot sound
+			window -> create window with message
+			help -> show this window""")
+
