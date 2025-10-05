@@ -11,7 +11,7 @@
 script = ExtResource( 2 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 3.9243, 0, 0, 0, 3.9243, 0, 0, 0, 3.9243, 0, 0, 0 )
+transform = Transform( 1.36368, 0, 0, 0, 1.36368, 0, 0, 0, 1.36368, 0, 0, 0 )
 mesh = SubResource( 3 )
 
 [node name="gizmo" parent="." instance=ExtResource( 1 )]
