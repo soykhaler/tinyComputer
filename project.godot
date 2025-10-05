@@ -12,7 +12,9 @@ config_version=4
 
 config/name="tinyComputer"
 run/main_scene="res://boot.tscn"
-config/icon="res://TC_Logo_final.png"
+boot_splash/show_image=false
+config/icon="res://icon/icon.png"
+config/macos_native_icon="res://icon/icon-mac.icns"
 config/windows_native_icon="res://icon.ico"
 
 [autoload]
