@@ -51,6 +51,6 @@ expand = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.02105, -0.295366, -4.49013 )
 
 [node name="Area" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0837264, 0.233247, 0.99605 )
+transform = Transform( 1.0017, 0, 0, 0, 1.0017, 0, 0, 0, 1.0017, 0.0837264, 0.233247, 0.99605 )
 
 [connection signal="pressed" from="Button" to="." method="Close"]

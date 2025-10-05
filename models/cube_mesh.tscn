@@ -14,7 +14,7 @@ script = ExtResource( 2 )
 mesh = SubResource( 1 )
 
 [node name="gizmo" parent="." instance=ExtResource( 1 )]
-transform = Transform( 2.58545, 0, 0, 0, 2.58545, 0, 0, 0, 2.58545, 0.033675, -0.075357, -0.171162 )
+transform = Transform( 1.53358, 0, 0, 0, 1.53358, 0, 0, 0, 1.53358, 0.033675, -0.075357, -0.171162 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 shape = SubResource( 2 )
