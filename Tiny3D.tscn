@@ -78,7 +78,7 @@ margin_right = 64.0
 margin_bottom = 68.0
 text = "Plane"
 
-[node name="Plane2" type="Button" parent="Menu/VBoxContainer"]
+[node name="Cylinder" type="Button" parent="Menu/VBoxContainer"]
 margin_top = 72.0
 margin_right = 64.0
 margin_bottom = 92.0
