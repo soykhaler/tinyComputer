@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://crt.tres" type="Shader" id=1]
 [ext_resource path="res://Camera3D.gd" type="Script" id=2]
-
-[sub_resource type="CubeMesh" id=1]
+[ext_resource path="res://models/viewport_grid.glb" type="PackedScene" id=3]
+[ext_resource path="res://Tiny3D.gd" type="Script" id=4]
+[ext_resource path="res://models/cube_mesh.tscn" type="PackedScene" id=5]
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 1 )
@@ -12,9 +13,7 @@ shader_param/scanline_count = 50.0
 [sub_resource type="ViewportTexture" id=3]
 
 [node name="3D" type="Spatial"]
-
-[node name="MeshInstance" type="MeshInstance" parent="."]
-mesh = SubResource( 1 )
+script = ExtResource( 4 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 0.662868, 0, 0.748736, 0, 1, 0, -0.748736, 0, 0.662868, 6.2243, 0.824486, 3.28673 )
@@ -24,16 +23,16 @@ script = ExtResource( 2 )
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 margin_left = -2.0
-margin_top = 12.0
+margin_top = 1.0
 margin_right = 515.0
-margin_bottom = 46.0
+margin_bottom = 35.0
 rect_pivot_offset = Vector2( -417, -67 )
 
 [node name="Button" type="Button" parent="."]
 margin_left = 483.0
-margin_top = 17.0
+margin_top = 6.0
 margin_right = 506.0
-margin_bottom = 40.0
+margin_bottom = 29.0
 text = "X"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -47,3 +46,11 @@ margin_bottom = 514.0
 mouse_filter = 2
 texture = SubResource( 3 )
 expand = true
+
+[node name="viewport_grid" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.02105, -0.295366, -4.49013 )
+
+[node name="Area" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0837264, 0.233247, 0.99605 )
+
+[connection signal="pressed" from="Button" to="." method="Close"]
