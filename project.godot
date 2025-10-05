@@ -13,6 +13,7 @@ config_version=4
 config/name="tinyComputer"
 run/main_scene="res://boot.tscn"
 config/icon="res://TC_Logo_final.png"
+config/windows_native_icon="res://icon.ico"
 
 [autoload]
 
