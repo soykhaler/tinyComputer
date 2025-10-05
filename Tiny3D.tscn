@@ -16,7 +16,7 @@ shader_param/scanline_count = 50.0
 script = ExtResource( 4 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.662868, 0, 0.748736, 0, 1, 0, -0.748736, 0, 0.662868, 6.2243, 0.824486, 3.28673 )
+transform = Transform( 0.662868, 0, 0.748736, 0, 1, 0, -0.748736, 0, 0.662868, 6.2243, 3.38088, 3.28673 )
 current = true
 fov = 106.2
 script = ExtResource( 2 )
@@ -82,3 +82,6 @@ text = "Cylinder"
 
 [connection signal="pressed" from="Button" to="." method="Close"]
 [connection signal="pressed" from="Menu/VBoxContainer/Cube" to="Menu" method="cube"]
+[connection signal="pressed" from="Menu/VBoxContainer/Sphere" to="Menu" method="sphere"]
+[connection signal="pressed" from="Menu/VBoxContainer/Plane" to="Menu" method="plane"]
+[connection signal="pressed" from="Menu/VBoxContainer/Cylinder" to="Menu" method="cylinder"]
