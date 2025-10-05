@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://boot.gd" type="Script" id=1]
-[ext_resource path="res://models/TC_Logo.png" type="Texture" id=2]
+[ext_resource path="res://models/TC_Logo_final.png" type="Texture" id=2]
+[ext_resource path="res://crt.tres" type="Shader" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 3 )
+shader_param/scanline_count = 50.0
+
+[sub_resource type="ViewportTexture" id=2]
 
 [node name="boot" type="Node2D"]
 script = ExtResource( 1 )
@@ -13,6 +20,18 @@ margin_right = 521.0
 margin_bottom = 520.0
 
 [node name="TcLogo" type="Sprite" parent="."]
-position = Vector2( 257, 238 )
-scale = Vector2( 0.0690626, 0.0690626 )
+position = Vector2( 255.75, 236.75 )
+scale = Vector2( 0.0882813, 0.0882813 )
 texture = ExtResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
+follow_viewport_enable = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+material = SubResource( 1 )
+margin_right = 514.0
+margin_bottom = 514.0
+mouse_filter = 2
+texture = SubResource( 2 )
+expand = true
