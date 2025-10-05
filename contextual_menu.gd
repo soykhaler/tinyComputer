@@ -16,8 +16,20 @@ func cube():
 	cube_instance.owner = get_tree().get_current_scene()
 	hideMenu()
 func sphere():
-	pass # Replace with function body.
+	var sphere_mesh = preload("res://models/sphere_mesh.tscn")
+	var sphere_instance = sphere_mesh.instance()
+	add_child(sphere_instance)
+	sphere_instance.owner = get_tree().get_current_scene()
+	hideMenu()
 func plane():
-	pass # Replace with function body.
+	var plane_mesh = preload("res://models/plane_mesh.tscn")
+	var plane_instance = plane_mesh.instance()
+	add_child(plane_instance)
+	plane_instance.owner = get_tree().get_current_scene()
+	hideMenu()
 func cylinder():
-	pass # Replace with function body.
+	var cylinder_mesh = preload("res://models/cylinder_mesh.tscn")
+	var cylinder_instance = cylinder_mesh.instance()
+	add_child(cylinder_instance)
+	cylinder_instance.owner = get_tree().get_current_scene()
+	hideMenu()
