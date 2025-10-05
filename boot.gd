@@ -1,5 +1,4 @@
 extends Node2D
-
 func _ready():
 	core.soundBeep(2)
 	$TcLogo.visible = false
