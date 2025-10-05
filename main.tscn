@@ -54,8 +54,8 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="ColorRect3" type="ColorRect" parent="StartMenu"]
-margin_top = 300.0
-margin_right = 83.0
+margin_top = 278.0
+margin_right = 82.0
 margin_bottom = 485.0
 color = Color( 0.239216, 0.239216, 0.239216, 1 )
 
@@ -107,6 +107,12 @@ margin_right = 80.0
 margin_bottom = 322.0
 text = "MiniCoder"
 
+[node name="Tiny3D" type="Button" parent="StartMenu"]
+margin_top = 280.0
+margin_right = 80.0
+margin_bottom = 300.0
+text = "Tiny3D"
+
 [node name="beep" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 stream = ExtResource( 3 )
@@ -122,3 +128,4 @@ pitch_scale = 0.93
 [connection signal="pressed" from="StartMenu/Music" to="." method="Music"]
 [connection signal="pressed" from="StartMenu/Notepad" to="." method="Notepad"]
 [connection signal="pressed" from="StartMenu/MiniCoder" to="." method="MiniCoder"]
+[connection signal="pressed" from="StartMenu/Tiny3D" to="." method="Tiny3D"]

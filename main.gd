@@ -51,3 +51,7 @@ func MiniCoder():
 	var w_minicoder = minicoder.instance()
 	add_child(w_minicoder)
 	core.soundBeep(0.2)
+
+
+func Tiny3D():
+	get_tree().change_scene("res://Tiny3D.tscn")
