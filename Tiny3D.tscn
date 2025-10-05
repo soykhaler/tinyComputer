@@ -4,7 +4,7 @@
 [ext_resource path="res://Camera3D.gd" type="Script" id=2]
 [ext_resource path="res://models/viewport_grid.glb" type="PackedScene" id=3]
 [ext_resource path="res://Tiny3D.gd" type="Script" id=4]
-[ext_resource path="res://models/cube_mesh.tscn" type="PackedScene" id=5]
+[ext_resource path="res://contextual_menu.gd" type="Script" id=5]
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 1 )
@@ -50,7 +50,11 @@ expand = true
 [node name="viewport_grid" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.02105, -0.295366, -4.49013 )
 
-[node name="Area" parent="." instance=ExtResource( 5 )]
-transform = Transform( 1.0017, 0, 0, 0, 1.0017, 0, 0, 0, 1.0017, 0.0837264, 0.233247, 0.99605 )
+[node name="Control" type="Control" parent="."]
+margin_left = 152.0
+margin_top = 128.0
+margin_right = 192.0
+margin_bottom = 168.0
+script = ExtResource( 5 )
 
 [connection signal="pressed" from="Button" to="." method="Close"]
