@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://boot.gd" type="Script" id=1]
+[ext_resource path="res://models/TC_Logo.png" type="Texture" id=2]
+
+[node name="boot" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -15.0
+margin_top = -16.0
+margin_right = 521.0
+margin_bottom = 520.0
+
+[node name="TcLogo" type="Sprite" parent="."]
+position = Vector2( 257, 238 )
+scale = Vector2( 0.0690626, 0.0690626 )
+texture = ExtResource( 2 )
