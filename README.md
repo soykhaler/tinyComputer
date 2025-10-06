@@ -8,11 +8,14 @@
 
 
 
-This is still a work in progress. You can view the source code here:
-
-https://github.com/soykhaler/tinyComputer
+This is still a work in progress. You can test on web here:
 
 https://soykhaler.github.io/tinyComputer/
+
+
+Download for Linux, Windows, Mac & Android from here:
+
+https://soykhaler.itch.io/tinycomputer
 
 
 
