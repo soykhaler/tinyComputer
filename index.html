@@ -47,15 +47,40 @@
         a {
             color: #0000ff;
             text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
         }
 
         a:hover {
             text-decoration: underline;
         }
 
+        a img {
+            width: 20px;
+            height: 20px;
+            image-rendering: pixelated;
+        }
+
         h3 {
             margin-top: 40px;
             margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 8px;
+                padding: 10px;
+            }
+            iframe {
+                width: 100%;
+                height: 400px;
+            }
+            a img {
+                width: 16px;
+                height: 16px;
+            }
         }
     </style>
 </head>
@@ -74,8 +99,19 @@
 
         <p><b><span style="color:#000000;">This is still a work in progress.</span></b> You can view the source code here:</p>
 
-        <p><a href="https://github.com/soykhaler/tinyComputer" target="_blank">Source Code on GitHub</a></p>
-        <p><a href="https://soykhaler.itch.io/tinycomputer" target="_blank">Download on itch.io</a></p>
+        <p>
+            <a href="https://github.com/soykhaler/tinyComputer" target="_blank">
+                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Logo">
+                Source Code on GitHub
+            </a>
+        </p>
+        <p>
+            <a href="https://soykhaler.itch.io/tinycomputer" target="_blank">
+                <img src="https://static.itch.io/images/itchio-textless-black.svg" alt="itch.io Logo">
+                Download on itch.io
+            </a>
+        </p>
+
         <h3>Features</h3>
 
         <p>- <b>tinyPixelArt:</b> A tiny pixel art painting tool for creating drawings at 16×16 resolution.</p>
